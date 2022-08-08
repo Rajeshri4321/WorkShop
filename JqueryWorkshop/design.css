@@ -1,0 +1,17 @@
+.btn {
+    width: 70px;
+  }
+  
+  #items {
+    width: 150px;
+    height: 150px;
+  }
+  
+  #myTable {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  

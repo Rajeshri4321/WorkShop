@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <h1>Our Store</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+        $("#myInput").click("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <img src="cupcake.jfif" class="head" alt="our Store" />
+    <br />
+    <div>
+      <button class="btn" id="all">all</button>
+      <button class="btn" id="cake">cake</button>
+      <button class="btn" id="cupcake">cupcake</button>
+      <button class="btn" id="donut">donut</button>
+      <button class="btn" id="cookie">cookie</button>
+    </div>
+    <br />
+
+    <input id="myInput" type="text" placeholder="Search.." />
+    <br /><br />
+
+    <table>
+      <tbody id="myTable">
+        <tr>
+          <td><img id="items" src="cake.jfif" /></td>
+          <td>cupcake</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td><img id="items" src="cupcake.jfif" /></td>
+          <td>cake</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td><img id="items" src="dounought.jfif" /></td>
+          <td>donut</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td><img id="items" src="pastry.jfif" /></td>
+          <td>cookie</td>
+          <td>$5</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
