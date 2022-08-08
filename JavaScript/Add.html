@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="add.js"></script>
+    <style>
+        .container
+        {
+            border-style: double;
+            border-end-end-radius: 4px;
+        }
+    </style>
+</head>
+
+ 
+<body>
+    <h1>Add your Book Here...</h1>
+    <form>
+        <table class="container">
+       <tr><td>Enter Book Name:</td><td><input type="text" placeholder="Book Name" name:bname, value="" id="bnm"></td></tr>
+       <tr><td>Enter Book Publisher:</td><td><input type="text" placeholder="Book Publisher"  name:publish, value="" id="pb"></td></tr>
+       <tr><td> Enter Book Price:</td><td><input type="text" placeholder="Book Price"  name:pr, value="" id="bp"></td></tr>
+        <tr><td><button onclick="addBook()">Submit</button></td></tr>
+    </table>
+    </form>
+</body>
+</html>

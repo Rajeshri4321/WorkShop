@@ -1,0 +1,4 @@
+@use "box";
+.new boxButton{
+    margin: 1rem +box.$radius;
+}

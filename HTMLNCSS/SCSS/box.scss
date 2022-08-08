@@ -1,0 +1,7 @@
+@use "button";
+@forward 'button';
+
+.boxButton{
+    @include button.buttonSmall;
+    margin: 1rem + button.$radius;
+}

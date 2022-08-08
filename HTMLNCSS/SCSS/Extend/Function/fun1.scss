@@ -1,0 +1,13 @@
+@function add($var1,$var2){
+$var3:$var1+$var2;
+@return $var3;
+}
+
+div{
+    height: add(300,400)*1px;
+
+}
+p{
+    width: add(50,60 )*1px;
+    font-size: add(10,14 )*1px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align:center ;">Registration Form</h1>
+    <table border="1px">
+        <tr>
+            <td>Employee ID</td>
+            <td><input type="number" value="number"></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" placeholder="Your First Name"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" placeholder="Your Last Name"></td>
+        </tr>
+
+        <tr>
+            <td>Department</td>
+            <td><input type="radio" value=IT name="dept">IT<br>
+                <input type="radio" value=IT name="dept">HR<br>
+                <input type="radio" value=IT name="dept">Finance<br>
+                <input type="radio" value=IT name="dept">Admin<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Joining </td>
+            <td><input type="date" name=dateofjoining></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name=email placeholder="abc12@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>Contact No</td>
+            <td><input type="text" placeholder="Your Contact No"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="address" cols="20px" rows="5px"></textarea></td>
+        </tr>
+        <tr>
+            <td>Training Programs to be attended</td>
+            <td><input type="checkbox" value="Web Basics" name="l1">Web Basics<br>
+                <input type="checkbox" value="C#" name="l1">C#<br>
+                <input type="checkbox" value="Entity Framework" name="l1">Entity Framework<br>
+                <input type="checkbox" value="ASP.NET MVC" name="l1">ASP.NET MVC<br>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>Register</button><button>Cancel</button></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
