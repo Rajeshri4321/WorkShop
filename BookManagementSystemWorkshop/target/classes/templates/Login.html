@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Login Page</title>
+<style>
+	body{
+		font-size: large;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bolder;
+		justify-content: center;
+		text-decoration-color: cadetblue;
+	}
+</style>
+</head>
+<body>
+<div alight="centre">
+	<h1>Login Page</h1>
+	<form action="#" th:action="@{/bookManagement/showbooks}" method="get" th:object="${user}">
+		<label>UserName : </label> 
+		<input type="text" th:field="*{username}"/></br>
+		<label>Password : </label>
+		<input type="password" th:field="*{password}"/></br>
+		<button type="submit">Login</button>
+	</form>
+</div>
+</body>
+</html>
